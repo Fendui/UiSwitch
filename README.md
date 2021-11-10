@@ -8,7 +8,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
   <li>Fully accessible</li>
   <li>Easily customisable with CSS</li>
   <li>Familiar input element experience</li>
-  <li>Renders a visually hidden input elemen</li>
+  <li>Renders a visually hidden input element</li>
  </ul>
  
 ## Props ⚙
