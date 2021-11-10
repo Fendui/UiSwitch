@@ -58,20 +58,19 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 
 ## Structure 🏗
 
-<pre><code>
-    &lt;slot name='prepend'/&gt;
+<pre><code>&lt;slot name='prepend'/&gt;
     
-    &lt;props.tag data-ui-switch='' class='root'>
-      &lt;div class='track'&gt;
-        &lt;slot name='track'/&gt;
-      &lt;/div&gt;
+ &lt;props.tag data-ui-switch='' class='root'>
+    &lt;div class='track'&gt;
+      &lt;slot name='track'/&gt;
+    &lt;/div&gt;
       
-      &lt;div class='thumb'&gt;
-        &lt;slot name='thumb'/&gt;
-      &lt;/div&gt;
-    &lt;/props.tag> 
+    &lt;div class='thumb'&gt;
+      &lt;slot name='thumb'/&gt;
+    &lt;/div&gt;
+ &lt;/props.tag> 
      
-   &lt;slot name='append'/&gt;   
+&lt;slot name='append'/&gt;   
 </code></pre>
 
 ## Slots 🎰 
