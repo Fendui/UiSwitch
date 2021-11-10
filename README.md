@@ -73,7 +73,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
    &lt;slot name='append'/&gt;   
 </code></pre>
 
-## slots 🎰 
+## Slots 🎰 
 
 <table>
  <thead>
@@ -103,7 +103,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
      <td>default</td><td>Same as <em>prepend</em></td><td>Use this slot to render anything inside the root element</td>
   </tr>
    <tr>
-     <td>append</td><td>Use this slot to render something else after the root component, commonly used for appending a <code>&lt;label/&gt;</code></td>
+     <td>append</td><td>Same as <em>prepend</em></td><td>Use this slot to render something else after the root component, commonly used for appending a <code>&lt;label/&gt;</code></td>
   </tr>
  </tbody>
 </table>
