@@ -8,6 +8,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
   <li>Fully accessible</li>
   <li>Easily customisable with CSS</li>
   <li>Familiar input element experience</li>
+ <li>Can be controlled or uncontrolled</li>
   <li>Renders a visually hidden input element</li>
  </ul>
  
@@ -89,7 +90,8 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
   validation: {
     message: '',
     valid: true
-  }
+  },
+  toggle: Function
 }
 </code></pre></td><td>Use this slot to render something else before the root component, commonly used for prepending a <code>&lt;label/&gt;</code></td>
   </tr>
@@ -109,6 +111,52 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 </table>
 
 <em>All slots are optional, and can accept multiple elements</em>
+
+## Examples
+
+ <em>Simplest form</em>
+ 
+<pre><code>&lt;div id='app'&gt;
+ &lt;UiSwitch/&gt;
+&lt;/div&gt;
+</code></pre>
+
+<em>With v-model</em>
+ 
+<pre><code>&lt;div id='app'&gt;
+ &lt;UiSwitch v-model='switch'/&gt;
+&lt;/div&gt;
+</code></pre>
+
+<em>With an external</em> <code>&lt;label&gt;</code>
+ 
+<pre><code>&lt;div id='app'&gt;
+ &lt;label for='switch'&gt;
+  Toggle UiSwitch
+ &lt;/label&gt;
+ 
+ &lt;UiSwitch id='switch' v-model='switch'/&gt;
+&lt;/div&gt;
+</code></pre>
+
+<em>With an internal</em> <code>&lt;label&gt;</code> <em>(prepend) and an internal validation message</em> <code>&lt;label&gt;</code> <em>(append)</em>
+ 
+<pre><code>&lt;div id='app'&gt;
+ &lt;UiSwitch id='switch' v-model='switch'&gt;
+  &lt;template v-slot:prepend='{active}'&gt;
+    &lt;label for='switch'&gt;
+     Selected: {{active}}
+    &lt;/label&gt;  
+  &lt;/template&gt;
+  
+  &lt;template v-slot:append='{validation, toggle}'&gt;
+    &lt;span v-if='validation.message' @click='toggle'&gt;
+     Error!
+    &lt;/span&gt;
+  &lt;/template&gt;
+ &lt;/UiSwitch&gt;
+&lt;/div&gt;
+</code></pre>
 
 ## CSS variables
 <table>
