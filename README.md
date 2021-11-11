@@ -138,7 +138,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 &lt;/div&gt;
 </code></pre>
 
-<em>With an internal</em> <code>&lt;label&gt;</code> <em>(prepend) and an internal validation message</em> <code>&lt;label&gt;</code> <em>(append)</em>
+<em>With an internal</em> <code>&lt;label&gt;</code> <em>(prepend) and an internal validation message</em> <code>&lt;span&gt;</code> <em>(append)</em>
  
 <pre><code>&lt;div id='app'&gt;
  &lt;UiSwitch id='switch' v-model='switch'&gt;
