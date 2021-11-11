@@ -111,7 +111,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 
 <em>All slots are optional, and can accept multiple elements</em>
 
-## Examples
+## Examples 💁‍♀️
 
  <em>Simplest form</em>
  
@@ -157,7 +157,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 &lt;/div&gt;
 </code></pre>
 
-## CSS variables
+## CSS variables 
 <table>
  <thead>
   <tr>
