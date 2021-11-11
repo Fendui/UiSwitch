@@ -141,7 +141,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 <em>With an internal</em> <code>&lt;label&gt;</code> <em>(prepend) and an internal validation message</em> <code>&lt;span&gt;</code> <em>(append)</em>
  
 <pre><code>&lt;div id='app'&gt;
- &lt;UiSwitch id='switch' v-model='switch'&gt;
+ &lt;UiSwitch id='switch'&gt;
   &lt;template v-slot:prepend='{active}'&gt;
     &lt;label for='switch'&gt;
      Selected: {{active}}
