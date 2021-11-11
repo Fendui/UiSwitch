@@ -25,7 +25,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
     <td>modelValue</td><td><code>Boolean</code></td><td>undefined</td><td>Used internally by <code>v-model</code></td>
   </tr>
   <tr>
-   <td>tag</td><td><code>String</code></td><td>button</td><td>This is the root tag that will be rendered. Mainly for semantics or core web functionality. Preferably a <code>HTMLElement</code></td>
+   <td>tag</td><td><code>String</code></td><td>undefined</td><td>This is the root tag that will be rendered. Mainly for semantics or core web functionality. Preferably a <code>HTMLElement</code></td>
   </tr>
    <tr>
    <td>id</td><td><code>String</code></td><td>button</td><td>This is useful if you want to control the internal <code>&lt;input/&gt;</code> with another element, mostly a <code>&lt;label&gt;</code></td>
