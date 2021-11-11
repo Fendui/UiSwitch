@@ -66,6 +66,7 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
     &lt;/div&gt;
       
     &lt;div class='thumb'&gt;
+      &lt;input/>
       &lt;slot name='thumb'/&gt;
     &lt;/div&gt;
  &lt;/props.tag> 
