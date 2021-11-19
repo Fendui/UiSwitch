@@ -58,21 +58,22 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 
 ## Structure 🏗
 
-<pre><code>&lt;slot name='prepend'/&gt;
+````vue
+<slot name='prepend'/>
     
- &lt;props.tag data-ui-switch='' class='root'>
-    &lt;div class='track'&gt;
-      &lt;slot name='track'/&gt;
-    &lt;/div&gt;
+ <props.tag data-ui-switch='' class='root'>
+    <div class='track'>
+      <slot name='track'/>
+    </div>
       
-    &lt;div class='thumb'&gt;
-      &lt;input/>
-      &lt;slot name='thumb'/&gt;
-    &lt;/div&gt;
- &lt;/props.tag> 
+    <div class='thumb'>
+      <input/>
+      <slot name='thumb' />
+    </div>
+ </props.tag> 
      
-&lt;slot name='append'/&gt;   
-</code></pre>
+<slot name='append'/>   
+````
 
 ## Slots 🎰 
 
@@ -116,47 +117,51 @@ The UiSwitch component is a flexible alternative to the non existing but widely 
 
  <em>Simplest form</em>
  
-<pre><code>&lt;div id='app'&gt;
- &lt;UiSwitch/&gt;
-&lt;/div&gt;
-</code></pre>
+````vue
+<div id='app'>
+ <UiSwitch/>
+</div>
+````
 
 <em>With v-model</em>
  
-<pre><code>&lt;div id='app'&gt;
- &lt;UiSwitch v-model='switch'/&gt;
-&lt;/div&gt;
-</code></pre>
+````vue
+<div id='app'>
+ <UiSwitch v-model='switch'/>
+</div>
+````
 
 <em>With an external</em> <code>&lt;label&gt;</code>
  
-<pre><code>&lt;div id='app'&gt;
- &lt;label for='switch'&gt;
+````vue
+<div id='app'>
+ <label for='switch'>
   Toggle UiSwitch
- &lt;/label&gt;
+ </label>
  
- &lt;UiSwitch id='switch' v-model='switch'/&gt;
-&lt;/div&gt;
-</code></pre>
+ <UiSwitch id='switch' v-model='switch'/>
+</div>
+````
 
 <em>With an internal</em> <code>&lt;label&gt;</code> <em>(prepend) and an internal validation message</em> <code>&lt;span&gt;</code> <em>(append)</em>
- 
-<pre><code>&lt;div id='app'&gt;
- &lt;UiSwitch id='switch'&gt;
-  &lt;template v-slot:prepend='{active}'&gt;
-    &lt;label for='switch'&gt;
+
+````vue
+<div id='app'>
+ <UiSwitch id='switch'>
+  <template v-slot:prepend='{active}'>
+    <label for='switch'>
      Selected: {{active}}
-    &lt;/label&gt;  
-  &lt;/template&gt;
+    </label> 
+  </template>
   
-  &lt;template v-slot:append='{validation, toggle}'&gt;
-    &lt;span v-if='validation.message' @click='toggle'&gt;
+  <template v-slot:append='{validation, toggle}'>
+    <span v-if='validation.message' @click='toggle'>
      Error!
-    &lt;/span&gt;
-  &lt;/template&gt;
- &lt;/UiSwitch&gt;
-&lt;/div&gt;
-</code></pre>
+    </span>
+  </template>
+ </UiSwitch>
+</div>
+````
 
 ## CSS variables 
 <table>
